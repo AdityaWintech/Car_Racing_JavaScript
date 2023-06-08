@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgba(236, 222, 74, 0.571);
+    background-size: cover;
+}
+.road{
+    width: 400px;
+    height: 100vh;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    border-left: 7px dashed white;
+    border-right:7px dashed white;
+}
+.car{
+    width: 70px;
+    height: 110px;
+    background-color:rgb(0, 0, 0);
+    background-size: cover;
+    background-image:url(./assests/mycar.png);
+    position: absolute;
+    bottom:20px;
+    z-index: 2;
+
+}
+.line{
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    
+    margin-left: 195px;
+    background-color: white;
+
+}
+#enemy{
+    height:110px;
+    width: 74px;
+    background-color:rgb(0, 0, 0);
+    background-image:url(./assests/mycar.png);
+    position: absolute;
+    background-size: cover;
+    top: 10px;
+    
+    animation:move 1.8s linear infinite ;
+}
+@keyframes move{
+    0%{
+        top: 10px;
+    }
+    100%{
+        top: 99vh;
+    }
+}
+
+#result{
+    border:3px solid black;
+    width: 400px;
+    height: 400px;
+     
+    border-radius: 0px 40px 0px 40px;
+    position:fixed;
+    top:80px;
+    left:450px;
+    background-color:rgb(0, 27, 96);
+    border-color: white;
+    box-shadow: 3px 5px 5px rgb(255, 0, 0);
+    display: none;
+}
+#result h1{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+#result p{
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+#result button{
+    border:2px double white;
+    background-color: rgb(132, 0, 255);
+    padding:6px 19px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0px 6px 0px 6px;
+    box-shadow: 1px 2px 4px rgb(255, 0, 0);
+    margin-left: 136px;
+
+}
+#img1{
+    position: fixed;
+    bottom: 10px;
+    left:20px;
+    width: 350px;
+}
+#img2{
+    position: fixed;
+    bottom: 195px;
+    left:240px;
+    width: 130px;
+}
+#img3{
+    position: fixed;
+    bottom: 10px;
+    right:20px;
+    width: 200px;
+}
